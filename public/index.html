@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Welcome!!!</h1>
+    <table>
+        <form>
+            <tr>
+                <td><label for="nm">Name:</label></td>
+                <td><input type="text" id="nm" name="nm"><br></td>
+            </tr>
+            <tr>
+                <td><label for="pswrd">Password:</label></td>
+                <td><input type="password" id="pswrd" name="pswrd"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td> <select id="city" name="city">
+                        <option value="bhopal">Bhopal</option>
+                        <option value="delhi">New Delhi</option>
+                        <option value="gwlr">Gwalior</option>
+                        <option value="indore">Indore</option>
+                    </select></td>
+
+            </tr>
+            <tr>
+                <td><input type="radio" id="vt" name="rd" value="visitor">
+                    <label for="vt">Visitor</label>&nbsp;
+                </td>
+                <td>
+                    <input type="radio" id="emp" name="rd" value="employee">
+                    <label for="emp">Employee</label>&nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit" formaction="./cust.html">Customer</button></td>
+                <td><button type="submit" formaction="./emp.html">Employee</button></td>
+            </tr>
+        </form>
+    </table>
 </body>
+
 </html>
